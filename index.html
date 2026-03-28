@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elikteuis & Beyneleuis Sozder | Қазақ Тілі</title>
+  <meta name="description" content="Қазақ тілінің еліктеуіш және бейнелеуіш сөздерін аудио мен анимация арқылы интерактивті үйрен.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/landing.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="app">
+    <div style="display:flex;align-items:center;justify-content:center;min-height:100vh;background:#f5f0e4">
+      <div style="text-align:center">
+        <div style="width:56px;height:56px;border:3px solid rgba(26,92,82,.15);border-top-color:#1a5c52;border-radius:50%;animation:spin .8s linear infinite;margin:0 auto 1rem"></div>
+        <p style="color:#4a6e6c;font-size:.9rem;font-family:sans-serif;font-weight:600">Жүктелуде...</p>
+      </div>
+    </div>
+  </div>
+  <style>
+    @keyframes spin{to{transform:rotate(360deg)}}
+    html{background:#f5f0e4}
+  </style>
+  <script src="js/data.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/landing.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
