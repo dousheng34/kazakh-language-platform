@@ -11,7 +11,7 @@ const AppData = {
       type: 'audio',
       words: [
         { id:'e1', word:'тарс',       type:'дара',    meaning:'есіктің қатты жабылу дыбысы',          example:'Есік тарс жабылды.',              sound:'door_slam' },
-        { id:'e2', word:'сарт',       type:'дара',    meaning:'қатты заттың соғылу/шағылу дыбысы',   example:'Ыдыс сарт сынды.',                sound:'crack'     },
+        { id:'e2', word:'сарт',       type:'дара',    meaning:'қатты заттың соғылу/шағылу дыбысы',   example:'Ыдыс сарт сынды.',                sound:'crac'   },
         { id:'e3', word:'дүңк',       type:'дара',    meaning:'ауыр заттың жерге түсу дыбысы',        example:'Жәшік дүңк етті.',                sound:'thud'      },
         { id:'e4', word:'қыңқ',       type:'дара',    meaning:'күшіктің әлсіз дыбысы',               example:'Күшік қыңқ етті.',                sound:'whimper'   },
         { id:'e6', word:'гүрс',       type:'дара',    meaning:'ауыр заттың гүрс етіп құлауы',         example:'Ағаш гүрс құлады.',               sound:'crash'     },
