@@ -1,58 +1,52 @@
 const AppData = {
-  modules: [
-    {
-      id: 'elikteuis',
-      title: 'Еліктеуіш сөздер',
-      subtitle: 'Дыбысқа еліктейтін сөздер',
-      description: 'Табиғат пен адам дүниесіндегі дыбыстарды бейнелейтін сөздер',
-      icon: '🔊',
-      color: '#8b5cf6',
-      gradient: 'linear-gradient(135deg,#7c3aed,#4f46e5)',
-      type: 'audio',
-      words: [
-        { id:'e1', word:'тарс',       type:'дара',    meaning:'есіктің қатты жабылу дыбысы',          example:'Есік тарс жабылды.',              sound:'door_slam' },
-        { id:'e2', word:'сарт',       type:'дара',    meaning:'қатты заттың соғылу/шағылу дыбысы',   example:'Ыдыс сарт сынды.',                sound:'crack' },
-        { id:'e3', word:'дүңк',       type:'дара',    meaning:'ауыр заттың жерге түсу дыбысы',        example:'Жәшік дүңк етті.',                sound:'thud'      },
-        { id:'e4', word:'қыңқ',       type:'дара',    meaning:'күшіктің әлсіз дыбысы',               example:'Күшік қыңқ етті.',                sound:'whimper'   },
-        { id:'e6', word:'гүрс',       type:'дара',    meaning:'ауыр заттың гүрс етіп құлауы',         example:'Ағаш гүрс құлады.',               sound:'crash'     },
-        { id:'e7', word:'шырт',       type:'дара',    meaning:'саусақтың шырт етуі не жіптің үзілуі', example:'Жіп шырт үзілді.',                sound:'click'     },
-        { id:'e8', word:'тарс-тұрс', type:'күрделі', meaning:'бірнеше қатты соққы дыбысы',           example:'Есікті тарс-тұрс ұрды.',          sound:'multi_slam'},
-        { id:'e9', word:'сарт-сұрт', type:'күрделі', meaning:'бірнеше рет соғылу/шағылу дыбысы',    example:'Сарт-сұрт сынды.',                sound:'multi_crack'},
-        { id:'e10',word:'арс-ұрс',   type:'күрделі', meaning:'қатты ұрыс, айқай дыбыстық әсері',    example:'Арс-ұрс десіп кетті.',            sound:'multi_thud'},
-        { id:'e11',word:'батыр-бұтыр',type:'күрделі',meaning:'майда заттардың сынып, быт-шыт болуы', example:'Батыр-бұтыр сынды.',              sound:'scatter'   },
-        { id:'e12',word:'қаңқ-қаңқ', type:'күрделі', meaning:'қаздың дауысы',                        example:'Қаз қаңқ-қаңқ етті.',             sound:'goose'     },
-        { id:'e13',word:'шаңқ-шаңқ', type:'күрделі', meaning:'шаңқылдаған қатты дауыс',              example:'Шаңқ-шаңқ күлді.',                sound:'shriek'    },
-        { id:'e14',word:'қаңғыр-күңгір',type:'күрделі',meaning:'көмескі, жаңғырыққан дыбыс',        example:'Қаңғыр-күңгір сарнады.',          sound:'echo'      },
-      ]
-    },
-    {
-      id: 'beineleuis',
-      title: 'Бейнелеуіш сөздер',
-      subtitle: 'Қимыл-бейне білдіретін сөздер',
-      description: 'Қозғалыс, қимыл және сыртқы бейнені суреттейтін сөздер',
-      icon: '✨',
-      color: '#06b6d4',
-      gradient: 'linear-gradient(135deg,#0891b2,#0d9488)',
-      type: 'animation',
-      words: [
-        { id:'b1', word:'жалт',            type:'дара',    meaning:'тез бұрылу, кілт қарау',              example:'Жалт қарады.',              anim:'jalt'    },
-        { id:'b2', word:'желп',            type:'дара',    meaning:'жеңіл қозғалу, желбіреу',             example:'Жалауша желп ербеңдеді.',   anim:'jelp'    },
-        { id:'b3', word:'жалп',            type:'дара',    meaning:'жалп етіп жабылу, жайылу',            example:'Жалп жайылды.',             anim:'jalp'    },
-        { id:'b4', word:'қалт',            type:'дара',    meaning:'селк еткен, қысқа қозғалыс',          example:'Қалт тоқтады.',             anim:'qalt'    },
-        { id:'b5', word:'елпең',           type:'дара',    meaning:'жеңіл, епсіздеу қозғалыс',            example:'Елпеңдеп жүрді.',           anim:'elpen'   },
-        { id:'b6', word:'қисаң',           type:'дара',    meaning:'қисая қозғалу',                        example:'Қисаңдап барды.',           anim:'qisan'   },
-        { id:'b7', word:'селк',            type:'дара',    meaning:'дененің селк етуі',                    example:'Селк етіп оянды.',          anim:'selk'    },
-        { id:'b8', word:'жалт-жұлт',       type:'күрделі', meaning:'жарқырау, тез-тез көріну',             example:'Жалт-жұлт жарқырады.',     anim:'jalt_jult'},
-        { id:'b9', word:'қалт-құлт',       type:'күрделі', meaning:'орнықсыз, теңселген қозғалыс',        example:'Қалт-құлт теңселді.',       anim:'qalt_qult'},
-        { id:'b10',word:'митың-митың',     type:'күрделі', meaning:'ұсақ, қысқа қадаммен жүру',           example:'Митың-митың жүрді.',        anim:'mityn'   },
-        { id:'b11',word:'ербелең-ербелең', type:'күрделі', meaning:'абыржып, асығыс қимылдау',             example:'Ербелең-ербелең жүгірді.',  anim:'erbelen' },
-        { id:'b12',word:'арбаң-арбаң',     type:'күрделі', meaning:'қол-аяқты кең сермеп жүгіру',         example:'Арбаң-арбаң жүгірді.',     anim:'arban'   },
-        { id:'b13',word:'тарбаң-тарбаң',   type:'күрделі', meaning:'ебедейсіз, ауыр қозғалу',             example:'Тарбаң-тарбаң басты.',      anim:'tarban'  },
-        { id:'b14',word:'салаң-сұлаң',     type:'күрделі', meaning:'сылбыр, салбырап жүру',               example:'Салаң-сұлаң жүрді.',        anim:'salan'   },
-      ]
-    }
-  ]
+    modules: [
+      {
+              id: 'grade7',
+              title: '7-\u0441\u044b\u043d\u044b\u043f',
+              subtitle: '\u049a\u0430\u0437\u0430\u049b \u04d9\u0434\u0435\u0431\u0438\u0435\u0442\u0456',
+              description: '7-\u0441\u044b\u043d\u044b\u043f\u049b\u0430 \u0430\u0440\u043d\u0430\u043b\u0493\u0430\u043d \u0448\u044b\u0493\u0430\u0440\u043c\u0430\u043b\u0430\u0440 \u0442\u0456\u0437\u0456\u043c\u0456',
+              icon: '\ud83d\udcda',
+              color: '#8b5cf6',
+              gradient: 'linear-gradient(135deg,#7c3aed,#4f46e5)',
+              type: 'literature',
+              topics: [
+                { id:'7_1', author:'\u049a\u0430\u0437\u0442\u0443\u0493\u0430\u043d \u0436\u044b\u0440\u0430\u0443', title:'"\u049a\u0430\u0437\u0442\u0443\u0493\u0430\u043d\u043d\u044b\u043d \u049b\u043e\u043d\u044b\u0441\u044b\u043c\u0435\u043d \u049b\u043e\u0448\u0442\u0430\u0441\u0443\u044b"' },
+                { id:'7_2', author:'\u041e\u0440\u0445\u043e\u043d-\u0415\u043d\u0438\u0441\u0435\u0439 \u0435\u0441\u043a\u0435\u0440\u0442\u043a\u0456\u0448\u0442\u0435\u0440\u0456', title:'"\u041a\u04af\u043b\u0442\u0435\u0433\u0456\u043d" \u0436\u044b\u0440\u044b' },
+                { id:'7_3', author:'\u0425\u0430\u043b\u044b\u049b \u0436\u044b\u0440\u044b', title:'"\u049a\u044b\u0437 \u0416\u0456\u0431\u0435\u043a" \u0436\u044b\u0440\u044b' },
+                { id:'7_4', author:'\u0416\u0430\u043c\u0431\u04b1\u043b \u0416\u0430\u0431\u0430\u0435\u0432', title:'"\u0417\u0456\u043b\u0434\u0456 \u0431\u04b1\u0439\u0440\u044b\u049b"' },
+                { id:'7_5', author:'\u041c. \u04d8\u0443\u0435\u0437\u043e\u0432', title:'"\u041a\u04e9\u043a\u0441\u0435\u0440\u0435\u043a"' },
+                { id:'7_6', author:'\u049a. \u049a\u0430\u0439\u0441\u0435\u043d\u043e\u0432', title:'"\u0416\u0430\u0443 \u0442\u044b\u043b\u044b\u043d\u0434\u0430\u0493\u044b \u0431\u0430\u043b\u0430"', hasGame: true }
+                      ]
+      },
+      {
+              id: 'grade8',
+              title: '8-\u0441\u044b\u043d\u044b\u043f',
+              subtitle: '\u049a\u0430\u0437\u0430\u049b \u04d9\u0434\u0435\u0431\u0438\u0435\u0442\u0456',
+              description: '8-\u0441\u044b\u043d\u044b\u043f\u049b\u0430 \u0430\u0440\u043d\u0430\u043b\u0493\u0430\u043d \u0448\u044b\u0493\u0430\u0440\u043c\u0430\u043b\u0430\u0440 \u0442\u0456\u0437\u0456\u043c\u0456',
+              icon: '\ud83d\udcd6',
+              color: '#06b6d4',
+              gradient: 'linear-gradient(135deg,#0891b2,#0d9488)',
+              type: 'literature',
+              topics: [
+                { id:'8_1', author:'\u049a\u043e\u0440\u049b\u044b\u0442', title:'"\u0411\u0430\u0439\u0431\u04e9\u0440\u0456 \u0431\u0430\u043b\u0430\u0441\u044b \u0411\u0430\u043c\u0441\u044b-\u0411\u0430\u0439\u0440\u0430\u049b \u0442\u0443\u0440\u0430\u043b\u044b \u0436\u044b\u0440"' },
+                { id:'8_2', author:'\u0411. \u041c\u043e\u043c\u044b\u0448\u04b1\u043b\u044b', title:'"\u04b1\u0448\u049b\u0430\u043d \u04b1\u044f" \u04d9\u04a3\u0433\u0456\u043c\u0435\u0441\u0456' },
+                { id:'8_3', author:'\u041c. \u041c\u0430\u049b\u0430\u0442\u0430\u0435\u0432', title:'"\u0410\u049b\u049b\u0443\u043b\u0430\u0440 \u04b1\u0439\u044b\u049b\u0442\u0430\u0493\u0430\u043d\u0434\u0430" \u043f\u043e\u04d9\u043c\u0430\u0441\u044b' }
+                      ]
+      },
+      {
+                        id: 'grade9',
+              title: '9-\u0441\u044b\u043d\u044b\u043f',
+              subtitle: '\u049a\u0430\u0437\u0430\u049b \u04d9\u0434\u0435\u0431\u0438\u0435\u0442\u0456',
+              description: '9-\u0441\u044b\u043d\u044b\u043f\u049b\u0430 \u0430\u0440\u043d\u0430\u043b\u0493\u0430\u043d \u0448\u044b\u0493\u0430\u0440\u043c\u0430\u043b\u0430\u0440 \u0442\u0456\u0437\u0456\u043c\u0456',
+              icon: '\ud83c\udfdb\ufe0f',
+              color: '#f59e0b',
+              gradient: 'linear-gradient(135deg,#d97706,#b45309)',
+              type: 'literature',
+              topics: [
+                { id:'9_1', author:'\u0416. \u0411\u0430\u043b\u0430\u0441\u0430\u0493\u04b1\u043d', title:'"\u049a\u04b1\u0442\u0442\u044b \u0431\u0456\u043b\u0456\u043a"' },
+                { id:'9_2', author:'\u041c\u0430\u0445\u0430\u043c\u0431\u0435\u0442 \u04e8\u0442\u0435\u043c\u0456\u0441\u04b1\u043b\u044b', title:'"\u041c\u0435\u043d, \u043c\u0435\u043d, \u043c\u0435\u043d \u0435\u0434\u0456\u043c"' },
+                { id:'9_3', author:'\u0406. \u0416\u0430\u043d\u0441\u04af\u0433\u0456\u0440\u043e\u0432', title:'"\u049a\u04b1\u043b\u0430\u0433\u0435\u0440" \u043f\u043e\u04d9\u043c\u0430\u0441\u044b' }
+                      ]
+      }
+        ]
 };
-Getting DOM...Pressing key...Stopping...
-
-Stop Agent
