@@ -49,13 +49,13 @@ class Landing {
       <!-- ── HERO ── -->
       <section class="lp-hero" id="hero">
         <div class="lp-hero-content">
-          <div class="lp-hero-badge">✦ ТІЛДІ МЕҢГЕРУ</div>
+          <div class="lp-hero-badge">✦ ЕЛІКТЕУ СӨЗДЕРДІ МЕҢГЕРУ</div>
           <h1 class="lp-hero-h1">
-            Қазақ тілінің<br><em class="lp-gold-italic">сыры</em>
+            Еліктеуіш және<br><em class="lp-gold-italic">бейнелеуіш</em>
           </h1>
           <p class="lp-hero-sub">
-            Дыбыстар мен қимылдар арқылы қазақ сөздерін үйрен.<br>
-            Аталар мұрасы мен дала рухын тіл арқылы сезін.
+            Дыбыстар мен қимыл-қозғалыстар арқылы еліктеу сөздерді меңгер.<br>
+            Еліктеуіш және бейнелеуіш сөздердің мағынасын түсініп, оларды сөйлеуде дұрыс қолдануды үйрен.
           </p>
           <div class="lp-hero-btns">
             <button class="lp-btn-primary" data-action="start">Бастау</button>
@@ -92,9 +92,9 @@ class Landing {
         <div class="lp-section-inner">
           <div class="lp-audio-left">
             <div class="lp-section-badge">🔊 ЕЛІКТЕУІШ СӨЗДЕР</div>
-            <h2 class="lp-section-h2">Дыбыстарды<br>тіркелей тыңданыз</h2>
+            <h2 class="lp-section-h2">Дыбыстарды тыңдаңыз</h2>
             <p class="lp-section-sub">
-              Табиғат пен адам дүниесіндегі дыбыстарды бейнелейтін сөздер. Әр бірін басып, дыбысын тыңданыз.
+              Табиғат пен адам әрекетінен туындайтын дыбыстарды білдіретін сөздермен танысыңыз. Әр батырманы басып, дыбысты тыңдаңыз.
             </p>
             <div class="lp-audio-demos">
               ${this._demoSounds.map(s => `
@@ -191,31 +191,31 @@ class Landing {
             </div>
           </div>
           <div class="lp-heritage-text">
-            <div class="lp-section-badge" style="color:#c4952a;background:rgba(196,149,42,.1)">🏺 АРЫБЫР БУЫҢДАҒЫ МҰРА</div>
-            <h2 class="lp-section-h2">Тіліміз — біздің<br>рухани <em class="lp-gold-italic">байлығымыз</em></h2>
+            <div class="lp-section-badge" style="color:#c4952a;background:rgba(196,149,42,.1)">Еліктеуіш және бейнелеуіш</div>
+            <h2 class="lp-section-h2">Тіліміз — рухани<br><em class="lp-gold-italic">байлығымыз</em></h2>
             <p class="lp-section-sub">
-              Қазақ мәдениетінде тіл — тек қатынас құралы емес; білгіл қорғаны ортаның айнасы. <strong>Еліктеуіш</strong> және <strong>Бейнелеуіш</strong> сөздер дала өмірінің сезімдік мәнін ашатын кілт болып табылады.
+              Қазақ мәдениетінде тіл — тек қатынас құралы ғана емес, халықтың өмір салтын, табиғатпен байланысын және дүниетанымын танытатын рухани қазына. Еліктеуіш және бейнелеуіш сөздер дала өмірінің дыбыстық әрі бейнелік сипатын ашатын маңызды тілдік бірліктер болып табылады.
             </p>
             <div class="lp-heritage-features">
               <div class="lp-hf">
                 <div class="lp-hf-icon">🌿</div>
                 <div>
-                  <strong>Табиғат Жаңғыры</strong>
-                  <span>Тіліміз шөптердің сыбыры, тұлпарлардың шабысын және таудағы желді еліктеу арқылы дамыған.</span>
+                  <strong>Табиғат тынысы</strong>
+                  <span>Тілімізде шөптің сыбдыры, тұлпардың дүбірі, желдің гуілі сияқты табиғат пен тіршілік дыбыстары еліктеу сөздер арқылы бейнеленеді.</span>
                 </div>
               </div>
               <div class="lp-hf">
                 <div class="lp-hf-icon">🦅</div>
                 <div>
-                  <strong>Дала Өмірі</strong>
-                  <span>Көшпенді өмірден туындаған сөздер — бүркіт ұшысы, ат шабысы, желпін соқпасы.</span>
+                  <strong>Дала өмірі</strong>
+                  <span>Көшпелі өмірден туған сөздер бүркіттің ұшуын, аттың шабысын, желдің соғуын және табиғаттағы түрлі қимыл-қозғалысты дәл сипаттайды.</span>
                 </div>
               </div>
               <div class="lp-hf">
                 <div class="lp-hf-icon">📜</div>
                 <div>
-                  <strong>Ата Мұрасы</strong>
-                  <span>Жырау мен ақындардың тілінде мың жылдық даналық сақталған.</span>
+                  <strong>Ата мұрасы</strong>
+                  <span>Жыраулар мен ақындар тілінде еліктеу сөздер халықтың байқағыштығын, сезімталдығын және мыңжылдық танымын сақтап қалған.</span>
                 </div>
               </div>
             </div>
